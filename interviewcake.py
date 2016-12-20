@@ -42,15 +42,16 @@ print product_excluding_int([1, 7, 3, 4])
         
 # highest product of three integers out of a list of integers...
 
-# def highest_product(l):
-#     # two negative numbers multiplied by a third positive gives us a positive 
+def highest_product(l):
+    # two negative numbers multiplied by a third positive gives us a positive 
 
-#     highest_produt_of_three = l[0]*l[1]*l[2]
-#     highest_product_two = lowest_product_two = l[0] * l[1]
-#     lowest = min(l[0], l[1])
-#     highest = max(l[0], l[1])
+    # highest_produt_of_three = l[0]*l[1]*l[2]
+    # highest_product_two = lowest_product_two = l[0] * l[1]
+    # lowest = min(l[0], l[1])
+    # highest = max(l[0], l[1])
 
-#     for i range(len(l)):
+    # for i range(len(l)):
+        
         
 
 
