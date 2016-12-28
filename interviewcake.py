@@ -51,14 +51,42 @@ def highest_product(l):
     # highest = max(l[0], l[1])
 
     # for i range(len(l)):
+
+    # highest product O(n^3):
+    if len(l) < 3:
+        return 'You need at least 3 numbers to solve this problem'
+
+    highest_product_of_three = l[0]*l[1]*l[2]
+    for num1 in l:
+        for num2 in l:
+            for num3 in l:
+                if num1 * num2 * num3 > highest_product_of_three:
+                    highest_product_of_three = num1 * num2 * num3
+    return highest_product_of_three
+
+
+print highest_product([-10,-10,1,3,2]) == 300 
+
+# when is everyone available? 
+# list_of_meetings - tuples
+
+def merge_ranges(meetings):
+    # sorted list of ranges
+    meetings = sorted(meetings)
+    # list of merged meetings
+    merged_meetings = [meetings[0]]
+
+
+
+print merge_ranges([(0,1),(3,5),(4,8),(10,12),(9,10)]) #== [(0,1), (3,8), (9,12)]
         
-        
 
 
-# when is everyone available... meeting time finder - time given in blocks of 30
 
-#(2, 3)  meeting from 10:00 – 10:30 am
-#(6, 9)  meeting from 12:00 – 1:30 pm
+
+
+
+
 
 
 
